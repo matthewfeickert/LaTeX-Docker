@@ -20,6 +20,7 @@ Through `apt-get` the following packages are installed:
 - locales
 - software-properties-common
 - sshpass
+- ghostscript
 
 TeX Live is installed by downloading and installing the source.
 

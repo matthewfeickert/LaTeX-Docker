@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND noninteractive
 # Install general dependencies
 RUN apt-get -qq -y update
 RUN apt-get -qq -y install curl wget build-essential zip python-pip jq git libfontconfig \
-    locales software-properties-common sshpass
+    locales software-properties-common sshpass ghostscript
 
 # Install latest TeX Live
 RUN wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
