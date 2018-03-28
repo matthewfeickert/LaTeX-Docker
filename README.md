@@ -21,6 +21,7 @@ Through `apt-get` the following packages are installed:
 - software-properties-common
 - sshpass
 - ghostscript
+- vim
 
 TeX Live is installed by downloading and installing the source.
 
