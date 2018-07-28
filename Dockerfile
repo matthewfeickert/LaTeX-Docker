@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 
 MAINTAINER Matthew Feickert <matthew.feickert@cern.ch>
 
