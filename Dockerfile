@@ -24,9 +24,10 @@ ENV PATH /opt/texbin:$PATH
 ENV PATH /usr/local/texlive/2017/bin/x86_64-linux:$PATH
 
 # Test LaTeX
-RUN wget ftp://www.ctan.org/tex-archive/macros/latex/base/small2e.tex
-RUN latex small2e.tex
-RUN xelatex small2e.tex
+RUN wget ftp://www.ctan.org/tex-archive/macros/latex/base/small2e.tex && \
+    latex small2e.tex && \
+    xelatex small2e.tex && \
+    lualatex small2e.tex
 
 RUN rm -rf /var/lib/apt/lists/*
 RUN rm -rf /root/*
