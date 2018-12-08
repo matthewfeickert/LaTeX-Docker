@@ -12,6 +12,7 @@ Through `apt-get` the following packages are installed:
 
 - curl
 - wget
+- rsync
 - build-essential
 - zip
 - python-pip
