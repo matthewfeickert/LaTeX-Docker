@@ -38,13 +38,12 @@ RUN wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz && \
 ENV PATH /opt/texbin:$PATH
 ENV PATH /usr/local/texlive/2017/bin/x86_64-linux:$PATH
 
-# Test LaTeX
+# Test LaTeX and cleanup
 RUN wget ftp://www.ctan.org/tex-archive/macros/latex/base/small2e.tex && \
     latex small2e.tex && \
     xelatex small2e.tex && \
-    lualatex small2e.tex
-
-RUN rm -rf /var/lib/apt/lists/* && \
+    lualatex small2e.tex && \
+    rm -rf /var/lib/apt/lists/* && \
     rm -rf /root/*
 
 WORKDIR /root
