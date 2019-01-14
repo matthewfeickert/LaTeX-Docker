@@ -5,6 +5,7 @@ Dockerfile for a container built off Ubuntu containing latest version of TeX Liv
 [![Docker Automated build](https://img.shields.io/docker/automated/matthewfeickert/latex-docker.svg)](https://hub.docker.com/r/matthewfeickert/latex-docker/)
 [![Docker Build Status](https://img.shields.io/docker/build/matthewfeickert/latex-docker.svg)](https://hub.docker.com/r/matthewfeickert/latex-docker/builds/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/matthewfeickert/latex-docker.svg)](https://hub.docker.com/r/matthewfeickert/latex-docker/)
+[![download-size number-of-layers](https://images.microbadger.com/badges/image/matthewfeickert/latex-docker.svg)](https://microbadger.com/images/matthewfeickert/latex-docker)
 
 ## Packages Installed
 
