@@ -30,7 +30,7 @@ RUN apt-get -qq -y update && \
 
 # Download and install the latest TeX Live distribution using the texlive.profile from the repo
 # http://tug.org/texlive/doc/texlive-en/texlive-en.html#x1-140003
-ADD texlive.profile texlive.profile
+COPY texlive.profile texlive.profile
 RUN wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz && \
     tar -zxvf install-tl-unx.tar.gz && \
     install-*/install-tl --profile=texlive.profile && \
